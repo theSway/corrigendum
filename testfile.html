@@ -9,11 +9,19 @@
             margin: 0;
             min-height: 100vh;
             font-family: Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(
+                125deg,
+                rgba(255, 182, 193, 0.7) 0%,
+                rgba(173, 216, 230, 0.7) 50%,
+                rgba(221, 160, 221, 0.7) 100%
+            );
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 2rem;
+            position: relative;
         }
 
         .container {
@@ -79,26 +87,33 @@
 <body>
     <div class="container">
         <div class="dropdown">
-            <button class="dropdown-header">Context 1</button>
+            <button class="dropdown-header">Kansalaisuuden saamisen edellytykset Suomessa</button>
             <div class="dropdown-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Täysi-ikäisyys, todistettu riittävä kielitaso, 8 vuoden asuinjakso, ei rikoksia, ei lähestymiskieltoa, ei laiminlyötyjä maksuvelvoitteita, selvitys tuloista viimeisen 5 vuoden ajalta. https://migri.fi/kansalaisuus-aikuiselle</p>
             </div>
         </div>
 
         <div class="dropdown">
-            <button class="dropdown-header">Context 2</button>
+            <button class="dropdown-header">Ulkomaalaiset veronmaksajat</button>
             <div class="dropdown-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Jos asut Suomessa ja saat veronalaista tuloa, maksat veroja kansalaisuusstatuksesta huolimatta. Maksat myös veroa Suomessa tehdystä työstä, vaikket asuisi Suomessa. Tilastojen esittäminen on määritelmien monimutkaisuudesta ja tietojen vajauden takia hankalaa, mutta Suomeen veroja maksaa todennäköisesti vähintään 190 000 yksilöä.</p>
             </div>
         </div>
 
         <div class="dropdown">
-            <button class="dropdown-header">Context 3</button>
+            <button class="dropdown-header">"Haittamaahanmuutto" ja kotoutuminen</button>
             <div class="dropdown-content">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             </div>
         </div>
     </div>
+
+    tsip tsup
+
+    ## Lähteet
+    [1]
+    [2]
+    [oWo]
 
     <script>
         document.querySelectorAll('.dropdown-header').forEach(header => {
